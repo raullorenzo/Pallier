@@ -1,0 +1,39 @@
+{
+  "name": "bigNumWeb",
+  "homepage": "https://github.com/cities2grupo4qp1516/bigNum",
+  "authors": [
+    "marc martinez;javi castellvi;adria couceiro;nacho arroyo"
+  ],
+  "description": "cities2",
+  "main": "index.html",
+  "moduleType": [],
+  "keywords": [
+    "bignumber"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#^1.5.0",
+    "jquery": "^2.2.1",
+    "modernizr": "^3.3.1",
+    "respond": "^1.4.2",
+    "bootstrap": "^3.3.6",
+    "XMLWriter": "^1.0.2",
+    "angular-rt-popup": "^1.0.6",
+    "angular-jsbn-big-integer": "^0.0.2",
+    "decimal.js": "^5.0.7",
+    "js-sha256": "^0.3.0",
+    "ng-file-upload": "^12.0.1",
+    "sockjs": "~0.3.4",
+    "animate.css": "~3.5.1",
+    "moment": "~2.12.0",
+    "angular-sockjs": "^0.1.0",
+    "font-awesome": "^4.5.0"
+  }
+}

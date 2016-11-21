@@ -1,0 +1,28 @@
+body {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 10%;
+    padding-bottom: 15%;
+    background-color: white;
+}
+
+.grande{
+    font-size: 50px;
+}
+.medium{
+    font-size: 30px;
+}
+.small{
+    font-size: 15px;
+    color: #0091ff;
+}
+.form-control{
+    margin-right: 50%;
+    margin-left: -4%;
+}
+.nums{
+    display: inline-block;
+}
+.botones{
+    padding-left: 2%;
+}

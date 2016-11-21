@@ -1,0 +1,97 @@
+<!DOCTYPE>
+<html ng-app="bigNumApp">
+
+<head>
+  <title>Pallier</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/flexslider.css">
+
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,700italic,400,300,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,700,900' rel='stylesheet' type='text/css'>
+
+  <script src="bower_components/XMLWriter/XMLWriter.js"></script>
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="bower_components/angular-jsbn-big-integer/big-integer.js"></script>
+  <script src="bower_components/decimal.js/decimal.min.js"></script>
+  <script src="bower_components/js-sha256/build/sha256.min.js"></script>
+  <script src="bower_components/ng-file-upload/ng-file-upload.min.js"></script>
+  <script src="bower_components/ng-file-upload/ng-file-upload-shim.min.js"></script>
+  <script src="js/modernizr.js"></script>
+  <meta charset="UTF-8">
+
+</head>
+
+<body>
+    <h1 class="grande" style="padding-left: 40%;">Paillier</h1>
+    <div ng-controller="PaillierController"> 
+            <div class="slide-content">
+              <br>
+              <br>
+              <br>
+              <br>
+              
+              <div class="nums" style="margin-left: 30%;"><h2 class="medium">Número A: </h2><input class="form-control" type="number" placeholder="Introduce Número A" ng-model="num1"></div>
+              <div class="nums" style="padding-left: 10%;"><h2 class="medium">Número B:</h3><input class="form-control" type="number" placeholder="Introduce Número B" ng-model="num2"></div>
+             
+              <br>
+              <br>
+              <br>
+              <div class="botones">
+                <button type="button" class="btn btn-primary" ng-click="keys()">GENERAR CLAVES</button>
+                <!-- <br><br> -->
+                <button type="button" class="btn btn-success" ng-click="encrypt()">ENCRIPTAR NÚMEROS</button>
+                <!-- <br><br> -->
+                <button type="button" class="btn btn-info" ng-click="sum()">SUMA HOMOMÓRFICA</button>
+                <!-- <br><br> -->
+                <button  type="button" class="btn btn-warning" ng-click="des_sum()">DESENCRIPTAR SUMA</button>
+                <!-- <br><br> -->
+                <button type="button" class="btn btn-danger" ng-click="mul()">MULTIPLICACIÓN HOMOMÓRFICA</button>
+                <!-- <br><br> -->
+                <button type="button" class="btn btn-primary" ng-click="des_mul()">DESENCRIPTAR MULTIPLICACIÓN</button>
+                <!-- <input style="display: none;" type="file" id="files" name="files[]" accept=".RSA" /> -->
+              </div>
+              <br>
+              <br>
+              <hr>
+            </div>
+
+
+            <h2 ng-show="claves">n: </h2><h3 class="small" ng-show="claves" style="word-wrap: break-word;">{{keys.n}}</h3>
+            <h2 ng-show="claves">g: </h2><h3 class="small" ng-show="claves" style="word-wrap: break-word;">{{keys.g}}</h3>
+
+            <h2 ng-show="numbers">Número A: </h2><h3 class="small" ng-show="numbers" style="word-wrap: break-word;">{{numeros_c.num1}}</h3>
+            <h2 ng-show="numbers">Número B: </h2><h3 class="small" ng-show="numbers" style="word-wrap: break-word;">{{numeros_c.num2}}</h3>
+
+            <h2 ng-show="add">Suma Encriptada: </h2><h3 class="small" ng-show="add" style="word-wrap: break-word;">{{addencr}}</h3>
+
+            <h2 ng-show="des_add">Suma Desencriptada: </h2><h3 class="small" ng-show="des_add" style="word-wrap: break-word; font-size: 60px; color: red; padding-left: 43%;">{{des_addencr}}</h3>
+
+            <h2 ng-show="prod">Multiplicación Encriptada: </h2><h3 class="small" ng-show="prod" style="word-wrap: break-word;">{{mulencr}}</h3>
+
+            <h2 ng-show="des_prod">Multiplicación Desencriptada: </h2><h3 class="small" ng-show="des_prod" style="word-wrap: break-word; font-size: 60px; color: red; padding-left: 43%;">{{des_mulencr}}</h3>
+            <br>
+            <hr>
+
+    </div>
+  
+
+ 
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/plugins.js"></script>
+
+  <script src="js/main_paillier.js"></script>
+  <script src="js/paillier.js"></script>
+  <script src="js/bignumber.js"></script>
+
+</body>
+
+</html>

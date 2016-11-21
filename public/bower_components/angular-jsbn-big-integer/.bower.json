@@ -1,0 +1,29 @@
+{
+  "name": "angular-jsbn-big-integer",
+  "version": "0.0.2",
+  "homepage": "http://www-cs-students.stanford.edu/~tjw/jsbn/",
+  "authors": [
+    "Tom Wu",
+    "Andy Perlitch"
+  ],
+  "description": "A library for working with big integers in javascript",
+  "main": "big-integer.js",
+  "keywords": [
+    "big",
+    "number",
+    "integer"
+  ],
+  "license": "BSD",
+  "dependencies": {
+    "angular": "~1"
+  },
+  "_release": "0.0.2",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.0.2",
+    "commit": "8074db61848b7a6dec3ec3a5c954db07b09b54a7"
+  },
+  "_source": "https://github.com/andyperlitch/angular-jsbn-big-integer.git",
+  "_target": "^0.0.2",
+  "_originalSource": "angular-jsbn-big-integer"
+}

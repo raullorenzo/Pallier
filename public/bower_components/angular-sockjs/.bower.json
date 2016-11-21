@@ -1,0 +1,22 @@
+{
+  "name": "angular-sockjs",
+  "version": "0.1.0",
+  "main": "./src/index.js",
+  "ignore": [],
+  "dependencies": {
+    "angular": ">= 1 < 2"
+  },
+  "devDependencies": {
+    "angular-mocks": ">= 1 < 2"
+  },
+  "homepage": "https://github.com/bendrucker/angular-sockjs",
+  "_release": "0.1.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.1.0",
+    "commit": "b608bcc095587ef311ce1157595f2c40716081c6"
+  },
+  "_source": "https://github.com/bendrucker/angular-sockjs.git",
+  "_target": "^0.1.0",
+  "_originalSource": "angular-sockjs"
+}
